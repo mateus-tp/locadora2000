@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora 2000</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<style> img {width: 100px; display: block; margin: auto; border-radius: 10px;}</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid" >
+        <img src="img/film.svg" alt="Locadora 2000" class="me-3">
+        <a href="#topo" class="navbar-brand">Locadora 2000</a>
+       
+        <div class="collapse navbar-collapse" id="navBarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li><a class="nav-link active" aria-current="page" href="#tabfilmes">Filmes disponíveis</a></li>
+           
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropGeneros" role="button" data-bs-toggle="dropdown" href="#drop" aria-expanded="false">Filmes por categoria</a>
+                <ul class="dropdown-menu" aria-Labelledby="navbarDropdownMenuLink" >
+                    <li><a class="dropdown-item" href="#gacao">Ação</a></li>
+                    <li><a class="dropdown-item" href="#ganim">Animação</a></li>
+                    <li><a class="dropdown-item" href="#gsus">Suspense</a></li>
+                    <li><a class="dropdown-item" href="#gcomedia">Comédia</a></li>
+                    <li><a class="dropdown-item" href="#gaven">Aventura</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#cadfilmes">Cadastrar Filmes</a></li>
+        </ul> 
+        </div>
+    </div>
+   </nav> 
+   <h1 class="display-1 text-center mb-5">Locadora 2000</h1>
+   <div class="container">
+<table class="table table-striped table-hover"> 
+    <thead> 
+        <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Capa</th>
+            <th scope="col">Título</th>
+            <th scope="col">Diretor</th>
+            <th scope="col">Lançamento</th>
+            <th scope="col">Gêneros</th>
+            <th scope="col">Ator/Atriz Principal</th>
+            <th scope="col">Nota IMDb</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th class="text-center table-primary" colspan="8" id="gacao">Ação</th>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td scope="col"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7QUXfIZf8jAnkZ5sG6oSZIIqVwbl-ynQglX3N1VNhcauq_4zP" alt="Capa do filme Esquema de Risco: Operação Fortune"></td>
+            <td scope="col">Esquema de Risco: Operação Fortune</td>
+            <td scope="col">Guy Ritchie</td>
+            <td scope="col">12 de janeiro de 2023</td>
+            <td scope="col">Ação</td>
+            <td scope="col">Jason Statham</td>
+            <td scope="col">6,3</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td scope="col"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvfkYNcjh7mncO6XPUlv611d5yqHUkGZMjGq8PXmKzGqeyC23A" alt="Capa do filme John Wick 4: Baba Yaga"></td>
+            <td scope="col">John Wick 4: Baba Yaga</td>
+            <td scope="col">Chad Stahelski</td>
+            <td scope="col">23 de março de 2023</td>
+            <td scope="col">Ação</td>
+            <td scope="col">Keanu Reeves</td>
+            <td scope="col">7,9</td>
+        </tr>
+        <tr>
+        <th scope="row">3</th>
+            <td scope="col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShiMFIVS1IlhbPeYqvmo312HreDEngS3Yz8WmmcZCfOU0XRStW" alt="Capa do filme Resgate 2"></td>
+            <td scope="col">Resgate 2</td>
+            <td scope="col">Sam Hargrave</td>
+            <td scope="col">16 de junho de 2023</td>
+            <td scope="col">Ação</td>
+            <td scope="col">Chris Hemsworth</td>
+            <td scope="col">7,1</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+                <td scope="col"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr14HVRuqIeQU_AWigeSJPv8d8dICChMlGcZoaUVHaVA5hpp_G" alt="Capa do filme Infiltrado"></td>
+                <td scope="col">Infiltrado</td>
+                <td scope="col">Guy Ritchie</td>
+                <td scope="col">26 de agosto de 2021</td>
+                <td scope="col">Ação</td>
+                <td scope="col">Jason Statham</td>
+                <td scope="col">7,1</td>
+        </tr>
+        <tr>
+             <th scope="row">5</th>
+                <td scope="col"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzy3vN0QmTh6FOqXqYMUQWm7q7brhwRLNSi6dwEOMTmAVRZP0C" alt="Capa do filme Agente Oculto"></td>
+                <td scope="col">Agente Oculto</td>
+                <td scope="col">Joe Russo, Anthony Russo</td>
+                <td scope="col">22 de julho de 2022</td>
+                <td scope="col">Ação</td>
+                <td scope="col">Ryan Gosling</td>
+                <td scope="col">6,5</td>
+        </tr>
+        <tr>
+        <th class="text-center table-primary" colspan="8" id="ganim">Animação</th>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td scope="col"><img src="https://www.dreamworks.com/storage/cms-uploads/puss-in-boots-the-last-wish-poster-thumbnail2.jpg" alt="Capa do filme Gato de Botas 2: O Último Pedido"></td>
+            <td scope="col">Gato de Botas 2: O Último Pedido</td>
+            <td scope="col">Joel Crawford</td>
+            <td scope="col">5 de janeiro de 2023</td>
+            <td scope="col">Animação</td>
+            <td scope="col">Antonio Banderas</td>
+            <td scope="col">7,9</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td scope="col"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOSI3_Sizp1sH4jENEWUblbOxhs1RfOlDOUe8wh2-Fx03frAlO" alt="Capa do filme Kung Fu Panda"></td>
+            <td scope="col">Kung Fu Panda</td>
+            <td scope="col">Mark Osborne, John Stevenson</td>
+            <td scope="col">4 de julho de 2008</td>
+            <td scope="col">Animação</td>
+            <td scope="col">Jack Black</td>
+            <td scope="col">7,6</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td scope="col"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT16bLHwX5FuHk_xhtGc2wyNJysoNHH6rwoZt8IUgF2hoRGBcj3" alt="Capa do filme Sing 2"></td>
+            <td scope="col">Sing 2</td>
+            <td scope="col">Garth Jennings</td>
+            <td scope="col">6 de janeiro de 2022</td>
+            <td scope="col">Animação</td>
+            <td scope="col">Bono Vox</td>
+            <td scope="col">7,4</td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td scope="col"><img src="https://m.media-amazon.com/images/M/MV5BZDQyODUwM2MtNzA0YS00ZjdmLTgzMjItZWRjN2YyYWE5ZTNjXkEyXkFqcGdeQXVyMTI2MzY1MjM1._V1_.jpg" alt="Capa do filme Minions 2: A Origem de Gru"></td>
+            <td scope="col">Minions 2: A Origem de Gru</td>
+            <td scope="col">Kyle Balda</td>
+            <td scope="col">30 de junho de 2022</td>
+            <td scope="col">Animação</td>
+            <td scope="col">Julie Andrews</td>
+            <td scope="col">6,5</td>
+        </tr>
+        <tr>
+            <th class="text-center table-primary" colspan="8" id="gsus">Suspense</th>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td scope="col"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTseOwyp3SAdvF-fA0Zi-h0m81nYdoaIUeFUPLv-4upYt9u80Fe" alt="Capa do filme Fratura"></td>
+                <td scope="col">Fratura</td>
+                <td scope="col">Brad Anderson</td>
+                <td scope="col">22 de setembro de 2019</td>
+                <td scope="col">Suspense</td>
+                <td scope="col">Sam Worthington</td>
+                <td scope="col">6,4</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td scope="col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpP0uXvUOTCMcvu_CTerznPt6HsWFPOr21zlejvAc5qvp0Qnsb" alt="Capa do filme Sorria"></td>
+                <td scope="col">Sorria</td>
+                <td scope="col">Parker Finn</td>
+                <td scope="col">29 de setembro de 2022 </td>
+                <td scope="col">Suspense</td>
+                <td scope="col">Sosie Bacon</td>
+                <td scope="col">6,5</td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <td scope="col"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT16bLHwX5FuHk_xhtGc2wyNJysoNHH6rwoZt8IUgF2hoRGBcj3" alt="Capa do filme O Telefone Preto"></td>
+                <td scope="col">O Telefone Preto</td>
+                <td scope="col">Scott Derrickson</td>
+                <td scope="col">21 de julho de 2022</td>
+                <td scope="col">Suspense</td>
+                <td scope="col">Ethan Hawke</td>
+                <td scope="col">6,9</td>
+            </tr>
+            <tr>
+                <th class="text-center table-primary" colspan="8" id="gcomedia">Comédia</th>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td scope="col"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSPSIsLMOYx2PcPqFTMkloWO2cfk4-aUfULAUeplMLvPzmmmT1" alt="Capa do filme O Homem de Toronto"></td>
+                    <td scope="col">O Homem de Toronto</td>
+                    <td scope="col">Patrick Hughes</td>
+                    <td scope="col">24 de junho de 2022</td>
+                    <td scope="col">Comédia</td>
+                    <td scope="col">Sam Worthington</td>
+                    <td scope="col">6,4</td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td scope="col"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_YOQ1K-ZTpbBTK0KyqZSY3BGFBUCGLgRby4QpxloD7KstoIOj" alt="Capa do filme Mistério em Paris"></td>
+                    <td scope="col">Mistério em Paris</td>
+                    <td scope="col">Jeremy Garelick</td>
+                    <td scope="col">31 de março de 2023</td>
+                    <td scope="col">Comédia</td>
+                    <td scope="col">Adam Sandler e Jennifer Aniston</td>
+                    <td scope="col">6,0</td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td scope="col"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxp1zGpRgnhx04mCdkDOlbu-FGTrgvK3SDNie8_ybDtKYb-sXo" alt="Capa do filme Alerta Vermelho"></td>
+                    <td scope="col">Alerta Vermelho</td>
+                    <td scope="col">Rawson Marshall Thurber</td>
+                    <td scope="col">4 de novembro de 2022</td>
+                    <td scope="col">Comédia</td>
+                    <td scope="col">Gal Gadot, Dwayne Johnson e Ryan Reynolds</td>
+                    <td scope="col">6,3</td>
+                </tr>
+
+
+                <tr>
+                    <th class="text-center table-primary" colspan="8" id="gcomedia">Comédia</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">16</th>
+                        <td scope="col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVoAcsXo5PmQfQPa6vzbPfMfzdrrnkgqLVpYWwAUKor8Q-muGv" alt="Capa do filme Indiana Jones e a Última Cruzada"></td>
+                        <td scope="col">Indiana Jones e a Última Cruzada</td>
+                        <td scope="col">Steven Spielberg</td>
+                        <td scope="col">24 de maio de 1989</td>
+                        <td scope="col">Aventura</td>
+                        <td scope="col">Harrison Ford</td>
+                        <td scope="col">8,2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">17</th>
+                        <td scope="col"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq0FFxoZpq-wOKKBQRTHxjBV4qAHDMR1F0F6qO_bd5xL9QPkAL" alt="Capa do filme Cidade Perdidas"></td>
+                        <td scope="col">Cidade Perdida</td>
+                        <td scope="col">Aaron Nee, Adam Nee</td>
+                        <td scope="col">21 de abril de 2022</td>
+                        <td scope="col">Aventura</td>
+                        <td scope="col">Sandra Bullock e Channing Tatum</td>
+                        <td scope="col">6,1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18</th>
+                        <td scope="col"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdhVox6HMHdojYOTphlniAHlDWeE96wYrQZUnlDOaOU5iY_K90" alt="Capa do filme Uncharted: Fora do Mapa"></td>
+                        <td scope="col">Uncharted: Fora do Mapa</td>
+                        <td scope="col">Ruben Fleischer</td>
+                        <td scope="col">17 de fevereiro de 2022</td>
+                        <td scope="col">Aventura</td>
+                        <td scope="col">Tom Holland</td>
+                        <td scope="col">6,3</td>
+                    </tr>
+          <tr id="insertRow"></tr>
+    </tbody>
+</table>
+   </div>
+
+   <div class="mb-5 mt-5">
+<hr class="border-primary border-3 opacity-75">
+   </div>
+   <div class="container mb-5">
+   <h2 class="text-center mb-4" id="cadfilmes">Cadastro de Filmes</h2>
+
+   <form name="register" onsubmit="event.preventDefault()">
+    <div class="row">
+        <div class="mb-3 col">
+            <label for="codFilm" class="form-label">Código</label>
+            <input type="text" class="form-control" id="codFilm" name="cod">
+        </div>
+        <div class="mb-3 col">
+        <label for="titleFilm" class="form-label">Título</label>
+        <input type="text" class="form-control" id="titleFilm" name="title">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="mb-3 col">
+            <label for="imgCapa" class="form-label">Link da imagem de capa</label>
+            <input type="text" class="form-control" id="imgCapa" name="capa">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="mb-3 col">
+            <label for="directorFilm" class="form-label">Diretor</label>
+            <input type="text" class="form-control" id="directorFilm" name="director">
+        </div>
+        <div class="mb-3 col">
+        <label for="yearFilm" class="form-label">Lançamento</label>
+        <input type="text" class="form-control" id="yearFilm" placeholder= "Ex: 26 de junho de 2023" name="date">
+        </div>
+    </div>
+
+    <p class="mb-2 d-flex">Selecione o Gênero</p>
+    <div class="row mt-3 mb-2">
+            <div class="col form-check ms-5">
+                <input type="radio" id="radioGacao" name="radio" class="form-check-input" value="acao">
+                <label for="radioGacao" class="form-label">Ação</label>
+            </div>
+
+            <div class="col form-check">
+                <input type="radio" id="radioGanim" name="radio" class="form-check-input" value="animacao">
+                <label for="radioGanim" class="form-label">Animação</label>
+            </div>
+
+            <div class="col form-check">
+                <input type="radio" id="radioGsus" name="radio" class="form-check-input" value="suspense">
+                <label for="radioGsus" class="form-label">Suspense</label>
+            </div>
+
+            <div class="col form-check">
+                <input type="radio" id="radioGcomedia" name="radio" class="form-check-input" value="comedia">
+                <label for="radioGcomedia" class="form-label">Comédia</label>
+            </div>
+
+            <div class="col form-check">
+                <input type="radio" id="radioGaven" name="radio" class="form-check-input" value="aventura">
+                <label for="radioGaven" class="form-label">Aventura</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="mainActor" class="form-label">Ator/Atriz Principal</label>
+                <input type="text" class="form-control" id="mainActor" name="actor">
+            </div>
+            <div class="mb-3 col">
+            <label for="noteIMDb" class="form-label">IMDb</label>
+            <input type="text" class="form-control" id="noteIMDb" name="note">
+            </div>
+        </div>
+
+        <div class="col-auto d-flex justify-content-center">
+<button type="submit" onclick="validationForm(); insert()" class="btn btn-primary mt-3">Cadastrar</button>
+        </div>
+   </form>
+    </div>
+</body>
+</html>
